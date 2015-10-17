@@ -31,7 +31,7 @@ import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 public class Application {
 
     @Bean
-    CommandLineRunner init(AccountRepository accountRepository, BookmarkRepository bookmarkRepository) {
+    CommandLineRunner init(final AccountRepository accountRepository, final BookmarkRepository bookmarkRepository) {
         return new CommandLineRunner() {
             @Override
             public void run(String... strings) throws Exception {

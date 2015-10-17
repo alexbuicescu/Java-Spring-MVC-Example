@@ -29,8 +29,8 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 public class Application {
 
 	@Bean
-	CommandLineRunner init(AccountRepository accountRepository,
-			BookmarkRepository bookmarkRepository) {
+	CommandLineRunner init(final AccountRepository accountRepository,
+			final BookmarkRepository bookmarkRepository) {
 		return new CommandLineRunner() {
 			@Override
 			public void run(String... strings) throws Exception {
